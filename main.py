@@ -77,20 +77,6 @@ summarizer_agent = Agent(
     ],
 )
 
-email_agent = Agent(
-    name="Email Agent",
-    role="Generate and send email",
-    model=model,
-    instructions=[
-        "You condense information from web searches into clear, actionable insights.",
-        "Focus on information most relevant to headphone recommendations:",
-        "- Key product features and specifications",
-        "- Pricing and value propositions",
-        "- User experience highlights",
-        "- Comparative advantages/disadvantages",
-        "Keep summaries concise but comprehensive enough for recommendation decisions.",
-    ],
-)
 # Enhanced Team with better workflow control
 headphone_guidance_team = Team(
     name="Headphone Recommendation System",
